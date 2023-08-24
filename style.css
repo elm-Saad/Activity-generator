@@ -9,7 +9,7 @@ html,body{
 }
 main{
     display: grid;
-    grid-template: 100px 72vh 80px/minmax(290px, 720px);
+    grid-template: 80px 72vh 80px/minmax(290px, 720px);
     height: 100vh;
     max-height: 100vh;
     width: 100%;
