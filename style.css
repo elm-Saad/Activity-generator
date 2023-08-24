@@ -1,0 +1,122 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right top, #00a8e8, #009ee0, #0093d8, #0089d0, #007fc7, #0275bc, #046bb0, #0561a5, #065595, #054985, #033e75, #003366);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: grid;
+    grid-template: 100px 60vh 150px/minmax(290px, 720px);
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+.d-flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1,
+.idea,
+img,
+button{
+    margin: 0;
+}
+h1{
+    color:#FFF;
+}
+h1,
+.robot,
+button{
+    align-self:center;
+    justify-self: center;
+}
+h1{
+    grid-row: 1/2;
+}
+.robot{
+    position: relative;
+    align-self: self-end;
+}
+.idea{
+    position: absolute;
+    top: -150px;
+    left: 0;
+    transition: all 0.5s;
+}
+button{
+    width: 150px;
+    padding: 1.25rem;
+    border-radius: 1.25rem;
+    border: 3px solid #fff;
+    color: #fff;
+    background-color: #00A8E8;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+button:hover{
+    background-color: #0072BB;
+}
+.activity-text {
+    position: relative;
+    background: #FFF;
+    color: #000000;
+    font-size: 1.25rem;
+    width: 250px;
+    height: 120px;
+    border-radius:0.625rem;
+    padding: 0.625rem;
+}
+.activity-text p{
+    margin-top: 40px;
+    margin-bottom: 0;
+    font-size: 1.125rem;
+}
+.activity-text:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 1.25rem 0 0 1.25rem;
+    border-color: #fff transparent transparent transparent;
+    bottom: -1.25rem;
+    left: 10%;
+    margin-right: -0.625rem;
+    transition: all 0.5s;
+}
+.thinking {
+    position: absolute;
+    top: -0.5rem;
+    right: 2.25rem;
+    width: 45px;
+    height: 45px;
+    transition: all 0.5s;
+}
+i{
+    font-size: 2rem;
+}
+.thinking img{
+    width: 100%;
+    height: 100%;
+}
+@media (min-width:700px) {
+    .activity-text:after {
+        left: 90%;
+        margin-right: 0;
+        margin-left: -0.625rem;
+    }
+    .idea{
+        left: -80%;
+    }
+    .thinking {
+        top: -1.5rem;
+    }
+}
