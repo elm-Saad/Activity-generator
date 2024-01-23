@@ -1,2 +1,2 @@
 # Activity-generator
- a js app generate activity using api
+Generate Fun Activities with API Integration!
